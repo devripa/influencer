@@ -1,201 +1,210 @@
 /* poppins font css link */
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:ital,wght@0,400;0,600;0,800;1,300;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat&family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:ital,wght@0,400;0,600;0,800;1,300;1,600;1,700&display=swap");
 /* css reseat */
-*{
-     margin: 0;
-    padding: 0; 
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-.container{
-    width: 80%;
-    margin: auto;
+/* img {
+  width: 100%;
+} */
+.container {
+  width: 85% !important;
+  margin: auto;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 /* header part css */
-header{
-    width: 100%;
-   max-height: 100vh;
+header {
+  width: 100%;
+  height: 100vh;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    gap: 25px;
+ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
-ul li a{
-    font-size: 20px;
-    text-transform: capitalize;
-    color: #333;
+ul li a {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #333;
 }
 .mobile-bar .bx-bar-chart {
-    font-size: 30px;
-    cursor: pointer;
+  font-size: 30px;
+  cursor: pointer;
 }
-.logo{
-    font-size: 30px;
-    text-transform: capitalize;
+.logo {
+  font-size: 20px;
+  text-transform: capitalize;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    align-items: center;
-   
-    
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.menubar{
-    display: flex;
-    gap: 25px;
-    align-items: center;
+.menubar {
+  display: flex;
+  gap: 25px;
+  align-items: center;
 }
-.bx{
-   font-size: 20px;
-   margin-top: 5px;
+.bx {
+  font-size: 20px;
+  margin-top: 5px;
 }
-.menubar .sopping-cart .bx{
-    font-size: 23px;
-    cursor: pointer;
-     padding: 2px 0; 
+.menubar .sopping-cart .bx {
+  font-size: 23px;
+  cursor: pointer;
+  padding: 2px 0;
 }
 /* banner part */
-.banner{
-    display: flex;
-    justify-content: space-between;
-    max-height: calc(100%-50px);  
-    align-items: center;
-    background: url("img/images/Circle\ design.svg");
-    background-repeat: no-repeat;
-    background-position: right; 
+.banner {
+  min-height: calc(100% - 50px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("img/images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  gap: 30px;
 }
 
-.contant h2{
-    font-size: 30px;
-    color: #333;
+.contant h2 {
+  font-size: 30px;
+  color: #333;
 }
-.contant .decription p{
-    font-size: 25px;
-    color: #333;
-    margin: 15px 0 25px;
+.contant .decription p {
+  font-size: 25px;
+  color: #333;
+  margin: 15px 0 25px;
 }
-.contant .btn{
-    padding: 10px 20px;
-    background-color: crimson;
-    border: 0;
-    cursor: pointer;
-    border-radius: 37px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    gap: 6px; 
+.contant .btn {
+  padding: 10px 20px;
+  background-color: crimson;
+  border: 0;
+  cursor: pointer;
+  border-radius: 37px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 6px;
 }
- .btn .bx{
-    font-size: 20px;  
+.btn .bx {
+  font-size: 20px;
+}
+.mobile-bar {
+  display: none;
 }
 /* header part end */
 /* main part */
-.brand-comparny{
+.brand-comparny {
   margin: 60px 0;
   border: 1px solid #333;
   padding: 10px 0;
   border-left: 0;
   border-right: 0;
- 
 }
-.barnd-name{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap; 
-    gap: 20px; 
+.barnd-name {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* responsive */
-@media (max-width:1050px){
-    .contant h2{
-        font-size: 25px;
-    }   
+@media (max-width: 1050px) {
+  .contant h2 {
+    font-size: 25px;
+  }
 }
 /* .bx-bar-chart{
      display: none; 
 }  */
-@media (max-width:992px){
-    
-    .banner{
-        flex-direction: column;
-       background-position: top center;
-       text-align: center;
-      
-    }
-    .logo{
-        font-size: 20px;
-    }
-    .menubar ul li a{
-        font-size: 15px;
-        
-    }
-    .contant .decription p{
-        font-size: 20px;
-    }
-    .contant {
-        order: 2;
-        margin-top: 70px;
-    }
-    .contant img{
-        order: 1;
-    }
-    .btn-container{
-      display: flex;
-      justify-content: center;  
-    } 
-     /* .brand-comparny{
+@media (max-width: 992px) {
+  header {
+    max-height: 100vh;
+  }
+  .banner {
+    flex-direction: column;
+    background-position: top center;
+    text-align: center;
+    justify-content: center;
+    max-height: 100vh;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .menubar ul li a {
+    font-size: 15px;
+  }
+  .contant .decription p {
+    font-size: 20px;
+  }
+  .contant {
+    order: 2;
+    margin-top: 70px;
+  }
+  .contant img {
+    order: 1;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  /* .brand-comparny{
         margin-top: 250px;
     }   */
 }
- /* responsive 768px */
-@media (max-width:768px){
-    .menubar ul{
-        display: none; 
-    }
-   .bx-bar-chart{
+/* responsive 768px */
+@media (max-width: 768px) {
+  .menubar ul {
+    display: none;
+  }
+  .bx-bar-chart {
     display: block;
-   }
- .img img{
+  }
+  .img img {
     width: 100%;
-   }
-   .btn-container{
+  }
+  .btn-container {
     display: flex;
     justify-content: flex-start;
-  
   }
-  .btn-container .btn{
+  .btn-container .btn {
     font-size: 16px;
-  
-} 
-
+  }
 }
 /* responsive 576px  */
-@media(max-width:576px){
-    .logo{
-        font-size: 15px
-    }
-  .banner{
-   justify-content: flex-start;
-
+@media (max-width: 576px) {
+  .banner {
+    max-height: 100vh;
+    background-position: top;
   }
- 
-  .btn-container .btn{
-        font-size: 10px; 
-    } 
-}
-  .contant h2 {
-    font-size: 20px;
-}
-.contant .decription p{
-    font-size: 12px; 
-}
+  .logo {
+    font-size: 15px;
+  }
 
-
-
+  .btn-container .btn {
+    font-size: 10px;
+  }
+}
+.contant h2 {
+  font-size: 20px;
+}
+.contant .decription p {
+  font-size: 12px;
+}
+@media (max-width: 480px) {
+  .banner {
+    background-size: contain;
+    justify-content: flex-start;
+  }
+  .banner img {
+    width: 100%;
+  }
+}
